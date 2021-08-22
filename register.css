@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(120deg, rgba(236, 89, 89, 0.788),rgba(255, 166, 0, 0.774));
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+    
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background:rgb(255, 242, 242);
+    border-radius: 25px;
+}
+
+.container h1{
+    text-align: center;
+    padding: 0 0 10px 0;
+    margin: 20px 0 10px 0 ;
+    color:rgb(255, 82, 19);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.icon{
+    display: flex;
+    top: 50%;
+    left: 50%;  
+    width: 50%;
+    justify-content: center;
+    padding: 10px 100px;
+    color:rgb(56, 29, 20); 
+    transform: scale(1.5);
+}
+
+.fab {
+    padding: 10px 15px;
+    transition: .5s ease-in-out;
+}
+
+.fab:hover{
+    cursor: pointer;
+    color: rgb(255, 115, 1);
+    transform: scale(1.2);
+}
+
+
+.container h2{
+    text-align: center;
+    margin: 0;
+    color:rgb(78, 68, 64);
+    font-size: 16px;
+}
+
+.container form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid rgb(240, 162, 162);
+    margin: 30px 0px;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 2px;
+    height: 40px;
+    font-size: 18px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgba(196, 50, 40, 0.719);
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(243, 240, 240);
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label{
+    top:-5px;
+    color: rgb(179, 44, 44);
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before{
+    width: 100%;
+}   
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color:rgb(255, 115, 1);
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+    color: rgb(150, 78, 12) ;
+}
+
+input[type="submit"]{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: rgb(245, 241, 241);
+    background-color: rgb(245, 98, 45) ;
+    border: 2px solid;
+    width: 80%;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 40px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 32px;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color:rgb(245, 98, 45);
+    transition: .5s;
+}
+
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup_link a{
+    color: rgb(245, 98, 45);
+    text-decoration: none;
+}
+
+.signup_link a:hover{
+    text-decoration: underline;
+    color: rgb(150, 78, 12);
+}

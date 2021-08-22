@@ -1,0 +1,147 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  /* display: grid;  */
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+hr{
+  border-color:#F05F44;
+  border-width: 3px;
+  max-width: 65px;
+}
+
+li{
+  list-style-type: none; /*no bullet*/
+}
+
+/* .row{
+  width:100%;
+  max-width:800px;
+  margin: 0 auto;
+} */
+
+.text--orange{
+  color: #F05F44;
+}
+
+/* NAVIGATION BAR */
+
+nav{
+    height: 100px;
+    width:100%;
+    max-width: 1000px;
+    margin: 0 auto; /*center*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav_link--list{
+  display:flex; /*words in a line*/
+}
+
+.nav_link--anchor{
+  margin: 0 12px; /*block blank*/
+  color:rgb(241, 241, 241);
+  font-weight: 700; /*bold*/
+}
+
+.nav_link--anchor:hover{
+  color: #F05F44;
+  text-decoration: none!important;
+}
+
+.nav_link--anchor-primary{
+  background-color: #F05F44;
+  color:aliceblue;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: all 300ms ease;
+}
+
+.nav_link--anchor-primary:hover{
+  background-color:rgb(180, 71, 28);
+  color: white;
+  text-decoration: none!important;
+}
+
+.personal_logo{
+  font-size: 24px;
+  color: #F05F44;
+  margin: 0px 12px;
+  font-weight: bold;
+}
+/* the biggest */
+
+/* .container{
+  margin:auto;
+  /* border: 1vh solid grey; */
+  /* white-space: normal;
+  word-wrap: break-word;}*/ 
+
+
+h1{
+  color:rgb(255, 255, 255);
+  transition: linear; /*texteffect */
+  /* white-space: normal;
+  word-wrap: break-word;
+  margin-top: 10%; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.buffer{
+  height: 7rem;
+}
+.buffer1{
+  height: 11rem;
+}
+
+  /* Button */
+
+/* .box-button{
+  position:absolute; 
+  display: flex;
+  margin-left:-5%;
+  left:50%;
+  bottom:15%;
+  white-space: normal;
+  word-wrap: break-word;
+} */
+
+.btn{
+  font-weight: 700;
+  /* background-color: #F05F44; */
+  text-transform: uppercase;
+  color:aliceblue;
+  border-radius: 50px;
+  margin-bottom: 5rem;
+}
+
+.btn:hover{
+  background-color: #F05F44;
+  border-color: #F05F44;
+}
+
+.btn-primary{
+  border-color:#F05F44 ;
+  background-color: #F05F44;
+  transition: .5s;
+}
+
+.btn-primary:hover{
+  background-color: rgb(180, 71, 28);
+  border-color: rgb(180, 71, 28);
+  border-width: 4px;
+}
+
+.btn-xl{
+  padding: 1rem 2rem;
+}
